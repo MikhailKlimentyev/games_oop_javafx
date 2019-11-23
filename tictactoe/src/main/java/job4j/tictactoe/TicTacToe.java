@@ -17,6 +17,7 @@ import javafx.scene.shape.Line;
 import javafx.stage.Stage;
 
 public class TicTacToe extends Application {
+
     private static final String JOB4J = "Крестики-нолики www.job4j.ru";
     private final int size = 3;
     private final Figure3T[][] cells = new Figure3T[size][size];
@@ -71,7 +72,7 @@ public class TicTacToe extends Application {
         Group group = new Group();
         group.getChildren().addAll(
                 new Line(
-                        x + 10, y  + 10,
+                        x + 10, y + 10,
                         x + size - 10, y + size - 10
                 ),
                 new Line(
@@ -115,7 +116,6 @@ public class TicTacToe extends Application {
         }
         return panel;
     }
-
 
     @Override
     public void start(Stage stage) {
